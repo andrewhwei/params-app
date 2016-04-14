@@ -10,7 +10,7 @@ class PagesController < ApplicationController
 
   def guessing_game
     right_number = 36
-    chosen_number = params[:number].to_i
+    chosen_number = params[:guess].to_i
 
     if chosen_number == right_number
       @winning_message = "Congrats! You guessed the right number! It was 36!"
@@ -22,6 +22,6 @@ class PagesController < ApplicationController
   end
 
   def the_button
-    
+    @count = params[:count].to_i
   end
 end

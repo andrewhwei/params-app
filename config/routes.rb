@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
   get "/my_name", to: 'pages#my_name'
-  get "/guessing_game", to: 'pages#guessing_game'
-  get "/the_button", to: 'pages#the_button'
+  get "/guessing_game/:guess", to: 'pages#guessing_game'
+  get "/the_button/:count", to: 'pages#the_button'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
