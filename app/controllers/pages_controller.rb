@@ -21,4 +21,7 @@ class PagesController < ApplicationController
     end
   end
 
+  def the_button
+    
+  end
 end
